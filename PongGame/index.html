@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <title>Pong</title>
-    <link rel="stylesheet" href="pong.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <div class="instructions">
+      <h1>Instructions :</h1>
+      <h2><strong>Left Player</strong> : W for up and S for down </h2>
+      <h2><strong>Right Player</strong> : up-arrow key for up and down-arrow key for down.</h2>
+      <h2>Press <strong>SPACE</strong> to start the game.</h2>
+      <h2>The ball's velocity is not always constant for obvious reasons.</h2>
+  </div>
     <div class="global-scene">
       <div id="player-one-bar" class="movable-player-one-bar"></div>
       <div id="player-two-bar" class="movable-player-two-bar"></div>
@@ -15,6 +23,9 @@
       </div>
       <div class="ball"></div>
     </div>
-    <script src="pong.js"></script>
+  <div>
+    <p>If you encounter any issues, refer to the <a href="https://github.com/ChangChuy/pong" target="_blank">documentation</a> or contact the <a href="mailto:Changj_chuy@hotmail.com" target="_blank">support team.</a></p>
+  </div>
+    <script src="script.js"></script>
   </body>
 </html>

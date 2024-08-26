@@ -111,29 +111,12 @@ function process() {
   }
 }
 
-function moveToTheLeftEdge() {
-
-    const tempXVelocity = position.x - xmin;
-    const tempYVelocity = (velocity.y * Math.abs(tempXVelocity/velocity.x)) ;
-
-    moveBall(tempXVelocity,tempYVelocity ); 
-    setPosition();
-
-}
-
-function moveToTheRightEdge() {
-
-    const tempXVelocity = xmax - position.x;
-    const tempYVelocity = (velocity.y * (tempXVelocity/velocity.x)) ;
-
-    moveBall(tempXVelocity, tempYVelocity); 
-    setPosition();
-
-}
-
 function moveBall(tempXVelocity, tempYVelocity){
 
-    position.y += tempYVelocity;
+    // had to add the random angle or else it's gonna be constant velocity and trajectory 
+    // The randomness creates the necessity of human input, to spice things up. 
+    const randomAngle = (Math.random() - 10) * 0.2;
+    position.y += tempYVelocity + randomAngle;
     position.x += tempXVelocity;
     
 }
