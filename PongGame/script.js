@@ -69,7 +69,7 @@ function process() {
         clearInterval(timer);
         // change ball position 
         playerOneScore += 1;
-        document.getElementById("player-one-score").innerHTML = playerOneScore;
+        document.getElementById("player-two-score").innerHTML = playerOneScore;
         // set ball position to the middle 
         position.y = 228;
         position.x = 228;
@@ -92,11 +92,11 @@ function process() {
         setPosition();
         velocity.x = -velocity.x;
     }
-    else {
+    else {"player-one-score"
         clearInterval(timer);
         // change ball position 
         playerTwoScore += 1;
-        document.getElementById("player-two-score").innerHTML = playerTwoScore;
+        document.getElementById("player-one-score").innerHTML = playerTwoScore;
         //reset the ball 
         position.y = 228;
         position.x = 228;
