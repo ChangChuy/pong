@@ -171,13 +171,9 @@ function handleInput(e) {
 
 }
 
-
-
 // listen for space is pressed
 // if ball is reset then start the ball
 // if not do nothing 
-
-
 
 document.addEventListener('keydown', handleInput);
 
